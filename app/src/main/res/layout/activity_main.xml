@@ -1,9 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.addisonelliott.segmentedbutton.SegmentedButtonGroup
+        android:id="@+id/buttonGroup_lordOfTheRings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="4dp"
+        android:elevation="2dp"
+        android:background="@color/white"
+        app:borderColor="@color/orange_700"
+        app:borderWidth="1dp"
+        app:divider="@color/orange_700"
+        app:dividerPadding="10dp"
+        app:dividerWidth="1dp"
+        app:position="0"
+        app:radius="30dp"
+        app:ripple="true"
+        app:rippleColor="@color/green_800"
+        app:selectedBackground="@color/green_900">
+
+        <com.addisonelliott.segmentedbutton.SegmentedButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/aniron"
+            android:padding="10dp"
+            app:drawable="@drawable/ic_aragorn"
+            app:drawableGravity="top"
+            app:selectedTextColor="@color/orange_700"
+            app:text="Aragorn"
+            app:textColor="@color/black" />
+
+        <com.addisonelliott.segmentedbutton.SegmentedButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/aniron"
+            android:padding="10dp"
+            app:drawable="@drawable/ic_gimli"
+            app:drawableGravity="top"
+            app:selectedTextColor="@color/grey_600"
+            app:text="Gimli"
+            app:textColor="@color/black" />
+
+        <com.addisonelliott.segmentedbutton.SegmentedButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/aniron"
+            android:padding="10dp"
+            app:drawable="@drawable/ic_legolas"
+            app:drawableGravity="top"
+            app:selectedTextColor="@color/yellow_200"
+            app:text="Legolas"
+            app:textColor="@color/black" />
+    </com.addisonelliott.segmentedbutton.SegmentedButtonGroup>
+
+
+</FrameLayout>
